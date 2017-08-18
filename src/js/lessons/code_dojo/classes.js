@@ -10,6 +10,10 @@ class Task {
         console.log(this.title + ' - выполнено');
     }
 
+    // get done() {
+    //     return this.done === true ? 'Выполнена' : 'Не выполнена';
+    // }
+
     static getDefaultTitle(){
         return 'Задача';
     }
