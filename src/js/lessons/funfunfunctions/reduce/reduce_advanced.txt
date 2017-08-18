@@ -1,0 +1,6 @@
+Евгений Позняк	Waffle	80	2
+Евгений Позняк	Blender	200	1
+Евгений Позняк	Knife	10	4
+Mike Doe	Iron	80	1
+Mike Doe	Knife	10	2
+Mike Doe	Pot	20	3
