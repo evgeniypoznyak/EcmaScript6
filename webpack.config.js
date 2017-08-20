@@ -10,7 +10,8 @@ var extractPlugin = new ExtractTextPlugin({
 
 module.exports = {
     entry: {
-              app: './src/js/app.js'
+              app: ['babel-polyfill', './src/js/app.js']
+              //app: './src/js/app.js'
             //app: './app.js'
             },
     output: {

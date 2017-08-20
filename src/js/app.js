@@ -8,5 +8,5 @@ import '../css/main.scss';
 //import './lessons/lavrik/lavrik';
 
 
-import './lessons/code_dojo/destructuring_objects'
+import './lessons/code_dojo/promise_project/promises'
 
