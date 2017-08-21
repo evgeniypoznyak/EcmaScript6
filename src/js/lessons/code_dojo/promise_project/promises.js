@@ -11,6 +11,7 @@ function addMovieToList(movie) {
     movieList.appendChild(img)
 }
 
+
 //AJAX
 //check status request
 const checkStatus = response => {
@@ -36,6 +37,7 @@ const searching = (s) => {
         removeEl();
         const api = `http://www.omdbapi.com/?apikey=57d13b99&s=${search.value}`;
         fetch(api)
+            .then(checkStatus)
             .then(value => value.json())
             .then(movies => {
                 if (movies.Search) {
