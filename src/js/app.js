@@ -8,5 +8,5 @@ import '../css/main.scss';
 //import './lessons/lavrik/lavrik';
 
 
-import './lessons/code_dojo/symbols'
+import './lessons/code_dojo/iterators'
 
