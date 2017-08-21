@@ -24,6 +24,7 @@ fetch('http://jsonplaceholder.typicode.com/posts/1')
 
 
 run(
+    //generator
     function *() {
         const uri = 'http://jsonplaceholder.typicode.com/posts/1';
         const response = yield fetch(uri);
@@ -36,5 +37,12 @@ run(
 
 function run(generator) {
     const iterator = generator();
-    console.log(iterator.next());
+    const iteration = iterator.next();
+    const promise = iteration.value;
+    promise.then( x => {
+    const  anotherPromise =  iterator.next(x).value
+     anotherPromise.then(y => {
+         return iterator.next(y)
+     })
+    })
 }
