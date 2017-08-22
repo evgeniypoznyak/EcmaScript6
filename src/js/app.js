@@ -8,5 +8,5 @@ import '../css/main.scss';
 //import './lessons/lavrik/lavrik';
 
 
-import './lessons/funfunfunctions/object_creation/examples'
+import './lessons/funfunfunctions/object_creation/new_keyword'
 
