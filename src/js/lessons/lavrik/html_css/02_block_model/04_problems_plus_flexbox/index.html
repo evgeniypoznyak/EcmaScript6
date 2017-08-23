@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            background: #cccccc;
+        }
+
+        .parent {
+            max-width: 1024px;
+            margin: 50px auto 0;
+            padding: 20px 40px;
+            background: #aaaaaa;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .sizes {
+            background-color: #ffda70;
+            width: 300px;
+            height: 300px;
+            border: 5px solid #6671d8;
+            padding: 30px;
+            margin: 20px 10px;
+            box-sizing: border-box; /* margin + width */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="parent clearfix">
+
+    <div class="sizes"></div>
+    <div class="sizes"></div>
+    <div class="sizes"></div>
+
+</div>
+
+</body>
+</html>

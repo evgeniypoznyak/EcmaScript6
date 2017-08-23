@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            background: #cccccc;
+        }
+
+        /* Создаем класс-библиотеку, который мы подключаем к родителю */
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .sizes {
+            background: #ffda70;
+            width: 300px;
+            height: 200px;
+            padding: 20px 10px;
+            margin: 0 20px;
+            border: 2px solid #6671d8;
+            float: left;
+        }
+
+        .parent {
+            background: blueviolet;
+            /* overflow: hidden; /* Overflow hidden - спасет всегда за исключением если что-то должно торчать */
+        }
+
+        /* Для того родителя который не видно, для него создаем псевдо элемент
+         Создаем пустой элемент внутри него. Потом присваиваем ему  display: block и clear: both */
+        /*.parent:after {
+            content: '';
+            display: block;
+            clear: both;
+        }*/
+
+    </style>
+</head>
+<body>
+
+<div class="parent clearfix">
+
+    <div class="sizes"></div>
+    <div class="sizes"></div>
+    <div class="sizes"></div>
+
+</div>
+
+</body>
+</html>

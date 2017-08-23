@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            background: #cccccc;
+        }
+
+        .wrapper {
+            background: #f3c467;
+            padding: 10px 0; /* Если надо margin у ребенка, то надо поставить padding у родителя */
+            /* overflow: hidden; /* Костыль родителю, чтобы margins встали правильно */
+        }
+
+        .inner {
+           /* margin: 10px 0;*/
+            /* display: block; /* Margin вылезает за пределы родительского элемента */
+            /* display: inline; /* Margin схлопывается не работает */
+           /* display: inline-block; /* Margin работает как надо */
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="inner">Lorem ipsum dolor sit amet</div>
+</div>
+
+</body>
+</html>
