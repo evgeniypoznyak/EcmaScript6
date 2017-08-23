@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 100px;
+            background: #aaaaaa;
+        }
+
+        #wrapper {
+            width: 400px;
+            height: 400px;
+            background: #777777;
+            margin: 0 auto;
+
+        }
+
+        #header {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+        }
+
+        #menu {
+            width: 100px;
+            height: 100px;
+            background: #00f;
+            position: relative;
+            bottom: 20px;
+            left: -20px;
+            box-shadow: 20px 20px 20px #464646;
+            z-index: 1;
+        }
+
+        #footer {
+            width: 100px;
+            height: 100px;
+            background: #ff7724;
+            position: relative; /* z-index = 1;*/
+            top: -100px;
+            left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="header"></div>
+    <div id="menu"></div>
+    <div id="footer"></div>
+</div>
+
+</body>
+</html>
