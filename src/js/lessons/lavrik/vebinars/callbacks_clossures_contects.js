@@ -3,6 +3,8 @@ window.onload = function () {
     var items = document.querySelectorAll('.items .item');
 
     items.forEach(item => {
+        // item.onclick = activeItem;
+        // работает и без но на всякий случай bind
         item.onclick = activeItem.bind(item);
     });
 
@@ -10,8 +12,8 @@ window.onload = function () {
         this.classList.toggle('red');
         fade(this, 1000, function () {
             this.style.display = 'none';
-            console.log('poop');
-            console.log(this);
+            /* console.log('poop');
+             console.log(this);*/
         })
     }
 
@@ -22,10 +24,9 @@ window.onload = function () {
         var steps = time / fps;
         var op = 1;
         var d0 = op / steps;
-
         var callback = f || function () {
         }
-        
+
         var timer = setInterval(function () {
             op -= d0;
             elem.style.opacity = op;
@@ -35,14 +36,14 @@ window.onload = function () {
                 callback.call(elem);
             }
         }, 1000 / fps)
+
     }
 
-
-/*
-    function mtRand(min, max) {
-        return Math.floor(Math.random() * (max - min + 1));
-    }
-    */
+    /*
+        function mtRand(min, max) {
+            return Math.floor(Math.random() * (max - min + 1));
+        }
+        */
 
     /*    setInterval(function () {
          let rand = mtRand(0, items.length - 1);
