@@ -2,5 +2,5 @@
 import '../css/main.scss';
 
 
-import './lessons/lavrik/vebinars/dom'
+import './lessons/lavrik/vebinars/dom/slider/slider'
 
