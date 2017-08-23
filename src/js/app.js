@@ -2,5 +2,5 @@
 import '../css/main.scss';
 
 
-import './lessons/lavrik/intensiv_verst/lesson_1/01_callbacks_closures'
+import './lessons/lavrik/intensiv_verst/lesson_1/calculator/calculator'
 
