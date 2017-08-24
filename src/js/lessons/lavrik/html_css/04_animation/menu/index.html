@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+</head>
+<style>
+    body, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul, li {
+        list-style: none;
+    }
+
+    nav {
+        margin: 100px;
+    }
+
+    nav ul {
+        width: 150px;
+        text-align: center;
+    }
+
+    nav li {
+        position: relative;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border: none;
+    }
+
+    nav a {
+        color: inherit;
+        display: block;
+        padding: 10px 20px;
+        background: #eeeeee;
+        text-decoration: none;
+        transition: background 0.5s, scale 1s;
+    }
+
+    nav a:hover {
+        background: #aaaaaa;
+        transform: scale(1.1);
+    }
+
+    nav ul ul {
+        position: absolute;
+        left: 105%;
+        top: 0;
+        width: 0;
+        overflow: hidden;
+        transition: width cubic-bezier(.16,.19,.26,.82) 0.5s;
+    }
+
+    nav ul > li:hover ul {
+        width: 100%;
+
+    }
+
+
+</style>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Главная</a></li>
+
+        <li>
+            <a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Главная</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+</body>
+</html>
