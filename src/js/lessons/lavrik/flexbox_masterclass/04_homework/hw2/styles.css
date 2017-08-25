@@ -8,9 +8,6 @@ body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,
 	height: 100%;
 	padding: 0 5px;
 	overflow: hidden;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 section.profit{
@@ -23,13 +20,29 @@ section.profit .item{
 	border: 3px solid #fff;
 	text-align: center;
 	background: #fff;
-	flex-basis: 300px;
-	margin: 10px 5px;
+}
+
+
+
+/* positions */
+
+section.profit .wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+section.profit .item {
+	max-width: 30%;
+	margin: 15px 5px;
+	min-width: 200px;
+
+	/* Мягкое сжатие не работает */
+	/*flex-basis: 200px;*/
 }
 
 .item img {
 	width: 100%;
-	flex-grow: 1;
+	/*flex-grow: 1;*/
 	/*flex-basis: 200px;*/
 }
-/* positions */

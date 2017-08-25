@@ -26,3 +26,9 @@ section.profit .item .text{
 }
 
 /* positions */
+
+section.profit .wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
