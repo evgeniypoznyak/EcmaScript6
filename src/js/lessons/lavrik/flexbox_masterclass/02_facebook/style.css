@@ -1,0 +1,113 @@
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td, menu {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img, abbr {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li, menu li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+legend {
+    color: #000;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* top */
+.top-share {
+    background: #ddd;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.top-share .top-share-fb {
+    background: linear-gradient(to bottom, #4b68b9 0%, #3b55a0 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-share .top-share-fb:hover {
+    box-shadow: 0 -50px 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.top-share .top-share-fb span {
+    display: inline-block;
+    padding: 10px 0 10px 20px;
+    background: url('img/fb.png') left center no-repeat;
+    background-size: 15px;
+}
+
+.top-share-text {
+    font-size: 25px;
+}
+
+/* top positions */
+
+.top-share .wrap {
+   /* height: 100px;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* это свойство перестает работать когда есть wrap,
+    для wrap надо использовать align-content */
+    align-items: center;
+    justify-content: center;
+}
+
+.top-share .top-share-fb {
+    padding: 0px 20px;
+    margin: 5px 0;
+    margin-right: 2%;
+
+}
+
+.top-share-text {
+padding: 10px 0;
+}
+
