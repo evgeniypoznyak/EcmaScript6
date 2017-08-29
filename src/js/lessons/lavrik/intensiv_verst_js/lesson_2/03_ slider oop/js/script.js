@@ -13,6 +13,9 @@ window.onload = function () {
     var images2 = document.querySelectorAll('.gallery-2 .photos img');
     var slider2 = new Slider(images2);
 
+    setInterval( slider2.next.bind(slider2), 1000);
+
+
     document.querySelector('.gallery-2 .buttons .prev').onclick = function () {
         slider2.prev();
     }
