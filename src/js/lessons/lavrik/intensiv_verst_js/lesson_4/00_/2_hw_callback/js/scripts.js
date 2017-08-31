@@ -1,89 +1,69 @@
-window.onload = function () {
+window.onload = function(e){
 
-    const renderHTML = `
-<div id="res" style="
-min-height: 300px;
-text-align: center;
-font-size: 30px;
-background: gray">Swipe Me!</div>`;
+    var inputs = document.querySelectorAll('.check');
 
-    document.body.innerHTML = renderHTML;
+    document.querySelector('form').onsubmit = function(e){
+        var error = false;
 
-    const options = {
+        for(var i = 0; i < inputs.length; i++){
+            if(inputs[i].value === ''){
+                inputs[i].classList.add('err');
+                error = true;
+            }
+        }
 
-        left: function (self) {
-            // place your code here
-            self.div.style.backgroundColor = 'red';
-        },
-
-        right: function (self) {
-            // place your code here
-            self.div.style.backgroundColor = 'blue';
-        },
-        up: function (self) {
-            // place your code here
-            self.div.style.backgroundColor = 'black';
-        },
-        down: function (self) {
-            // place your code here
-            self.div.style.backgroundColor = 'green';
+        if(error){
+            e.preventDefault();
         }
     }
 
-    const swiper = new Swiper('#res');
+    /* for(var i = 0; i < inputs.length; i++){
+        inputs[i].oninput = function(){
+            this.classList.remove('err');
+        }
+    }
 
-    function Swiper(selector) {
+    for(var i = 0; i < inputs.length; i++){
+        inputs[i].onfocus = function(){
+            this.classList.add('focus');
+        }
+    }
 
-        const self = this;
+    for(var i = 0; i < inputs.length; i++){
+        inputs[i].onblur = function(){
+            this.classList.remove('focus');
+        }
+    } */
 
-        // options  visible by Closure
-        self.options = options;
-        self.div = document.querySelector(selector);
-        self.xDown = null;
-        self.yDown = null;
+    var jqInputs = $('.check');
 
-        self.div.addEventListener('touchstart', function (e) {
-            self.xDown = e.touches[0].clientX;
-            self.yDown = e.touches[0].clientY;
-        })
+    jqInputs.on('click', function(){
+        this.classList.remove('err');
+    });
 
-        self.div.addEventListener('touchmove', function (e) {
-            if (!self.xDown || !self.yDown) {
-                return;
-            }
+    jqInputs.on('focus', function(){
+        this.classList.add('focus');
+    });
 
-            self.xUp = e.touches[0].clientX;
-            self.yUp = e.touches[0].clientY;
+    jqInputs.on('blur', function(){
+        this.classList.remove('focus');
+    });
 
-            self.xDiff = self.xDown - self.xUp;
-            self.yDiff = self.yDown - self.yUp;
+    jqInputs.addClass('some').addClass('some1').addClass('some2');
 
+    $('.items .item').on('click', function(){
+      //  console.log(this);
+        $(this).fade(1000, function(){
+          // this.style.fontSize = '33px';
+          //   this.style.opacity = 1;
+          //  this.style.display = 'block';
+          //  console.log(this);
+        });
+    });
+/*$('.items .item').fade(1000);*/
 
-            if (Math.abs(self.xDiff) > Math.abs(self.yDiff)) {
-                /!*most significant*!/
-                if (self.xDiff > 0) {
-                    /!* left swipe *!/
-                    self.options.left(self);
-                } else {
-                    /!* right swipe *!/
-                    self.options.right(self);
-                }
-            } else {
-                if (self.yDiff > 0) {
-                    /!* up swipe *!/
-                    self.options.up(self);
-                } else {
-                    /!* down swipe *!/
-                    self.options.down(self);
-                }
-            }
-            /!* reset values *!/
-            self.xDown = null;
-            self.yDown = null;
-
-
-        })
-    };
-
-
+    /*
+     *  $('.items .item').fade(300);
+     *  https://dmitrylavrik.ru/javascript/prostaya-animaciya-na-javascript
+     *  */
 }
