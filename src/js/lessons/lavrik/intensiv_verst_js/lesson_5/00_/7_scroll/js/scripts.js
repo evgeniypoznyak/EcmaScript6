@@ -8,12 +8,13 @@ $(function () {
         var selector = $(this).attr('href'); /* #about - строка */
         var h = $(selector); /* jquery-элемент заголовка */
         
-        $('html, body').animate({
+        $('html, body').stop().animate({
             scrollTop: h.offset().top - 70
-        }, 400);
+        }, 1400,);
         
         
     });
+
 
 
 });
