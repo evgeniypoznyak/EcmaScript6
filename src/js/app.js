@@ -2,5 +2,5 @@
 import '../css/main.scss';
 
 
-import './lessons/';
+import './lessons/funfunfunctions/abstractions/index';
 
