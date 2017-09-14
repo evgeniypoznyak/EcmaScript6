@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    .flex-container {
+        padding: 10px;
+        background: #e8e9e9;
+        border-radius: 5px;
+        margin: 45px auto;
+        box-shadow: 4px 14px 20px 3px rgba(72, 72, 72, 0.39);
+        /*edit*/
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*  justify-content: space-around;*/
+
+    }
+
+    .flex-element {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        background-color: firebrick;
+        margin: 5px;
+        border-radius: 3px;
+        color: white;
+        /*edit*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        flex: 1 200px;
+        /*flex-grow: 1;*/
+        /*flex-basis: auto;*/
+        /*flex-basis: 200px;*/
+    }
+
+    /*   .flex-element:first-child {
+           margin-right: auto;
+       }
+       .flex-element:last-child {
+           margin-left: auto;
+       }
+       .flex-element:nth-child(10){
+           margin: auto;
+       }*/
+
+    .el-1 {
+        /*order: 1;*/
+        /*flex-grow: 3;*/
+    }
+    .el-4 {
+        /*order: 1;*/
+        /*flex-grow: 3;*/
+    }
+
+    .el-8 {
+        /*order: -1;*/
+    }
+
+    .el-2 {
+        /*order: 2;*/
+    }
+
+
+</style>
+<body>
+<h1>Flexbox</h1>
+<div class="flex-container">
+    <div class="flex-element el-1">1</div>
+    <div class="flex-element el-2">2</div>
+    <div class="flex-element el-3">3</div>
+    <div class="flex-element el-4">4</div>
+    <div class="flex-element el-5">5</div>
+    <div class="flex-element el-6">6</div>
+    <div class="flex-element el-7">7</div>
+    <div class="flex-element el-8">8</div>
+    <div class="flex-element el-9">Lorem ipsum dolor sit amet 9</div>
+    <div class="flex-element el-10">Lorem ipsum 10</div>
+    <div class="flex-element el-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit 11</div>
+    <div class="flex-element el-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus asperiores
+        12
+    </div>
+    <div class="flex-element el-13">Lorem ipsum 13</div>
+    <div class="flex-element el-14">Lorem 14</div>
+    <div class="flex-element el-15">Lorem ipsum dolor 15</div>
+</div>
+
+</body>
+</html>

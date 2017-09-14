@@ -27,12 +27,21 @@
     .flex-element {
         text-align: center;
         padding: 10px;
+        font-size: 18px;
         background-color: firebrick;
         margin: 5px;
         border-radius: 3px;
         color: white;
         /*edit*/
-flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        flex: 1 200px;
+        /*flex-grow: 1;*/
+        /*flex-basis: auto;*/
+        /*flex-basis: 200px;*/
     }
 
     /*   .flex-element:first-child {
@@ -46,15 +55,20 @@ flex-grow: 1;
        }*/
 
     .el-1 {
-        order: 1;
+        /*order: 1;*/
+        /*flex-grow: 3;*/
+    }
+    .el-4 {
+        /*order: 1;*/
+        /*flex-grow: 3;*/
     }
 
     .el-8 {
-        order: -1;
+        /*order: -1;*/
     }
 
     .el-2 {
-        order: 2;
+        /*order: 2;*/
     }
 
 
@@ -73,7 +87,9 @@ flex-grow: 1;
     <div class="flex-element el-9">Lorem ipsum dolor sit amet 9</div>
     <div class="flex-element el-10">Lorem ipsum 10</div>
     <div class="flex-element el-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit 11</div>
-    <div class="flex-element el-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus asperiores 12</div>
+    <div class="flex-element el-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus asperiores
+        12
+    </div>
     <div class="flex-element el-13">Lorem ipsum 13</div>
     <div class="flex-element el-14">Lorem 14</div>
     <div class="flex-element el-15">Lorem ipsum dolor 15</div>
