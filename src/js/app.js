@@ -2,5 +2,4 @@
 import '../css/main.scss';
 
 
-import './lessons/funfunfunctions/abstractions/index';
-
+import './lessons/jeffrey_way/es6/08-modules/index';
