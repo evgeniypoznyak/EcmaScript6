@@ -16,3 +16,4 @@ let timer = function (length) {
 timer(4000).then((data) => {
     console.log(data);
 })
+
